@@ -1,6 +1,7 @@
 module.exports = {
   mutate: [
-    'src/animals.js'
+    'src/gato.js',
+    'src/cachorro.js'
   ],
   reporters: ['html', 'clear-text'],
   testRunner: 'jest',

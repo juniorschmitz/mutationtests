@@ -4,7 +4,10 @@ class Gato {
   }
 
   idadeHumana(idade) {
-    if (idade == 1) {
+    if (idade == 0) {
+      return 0
+    }
+    else if (idade == 1) {
       return 15
     }
     else if (idade == 2) {
@@ -13,20 +16,10 @@ class Gato {
     else if (idade > 2) {
       return 25 + ((idade-2)*4)
     }
+    else {
+      return "Idade inválida!"
+    }
   }
 }
 
-class Cachorro {
-  som() {
-    return "Auau"
-  }
-
-  idadeHumana(idade) {
-    return idade*7
-  }
-}
-
-module.exports = {
-  Gato : Gato,
-  Cachorro : Cachorro
-}
+module.exports = Gato;

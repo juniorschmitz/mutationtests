@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:mutation": "stryker run",
-    "test:coverage": "jest --collectCoverage true"
+    "test:coverage": "jest --collectCoverage true",
+    "test:coverage_report": "jest --coverage --collectCoverage true --coverageDirectory='reports/coverage'"
   },
   "keywords": [
     "MUTATION",
